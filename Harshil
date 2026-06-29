@@ -1,0 +1,205 @@
+threat-intelligence-dashboard/
+├── backend/
+│   ├── api/
+│   ├── models/
+│   ├── services/
+│   └── config/
+├── frontend/
+│   ├── components/
+│   ├── pages/
+│   └── styles/
+├── data/
+│   ├── threat_feeds/
+│   └── sample_data/
+└── docs/{
+  "summary": {
+    "totalAlerts": 324,
+    "criticalAlerts": 18,
+    "activeThreatActors": 12,
+    "blockedIPs": 245,
+    "malwareDetected": 56,
+    "phishingAttempts": 97,
+    "lastUpdated": "2026-06-29T10:30:00Z"
+  },
+  "threatLevels": [
+    {
+      "level": "Critical",
+      "count": 18,
+      "color": "#ff0000"
+    },
+    {
+      "level": "High",
+      "count": 67,
+      "color": "#ff6600"
+    },
+    {
+      "level": "Medium",
+      "count": 143,
+      "color": "#ffcc00"
+    },
+    {
+      "level": "Low",
+      "count": 96,
+      "color": "#00cc66"
+    }
+  ],
+  "recentAlerts": [
+    {
+      "id": "ALT-1001",
+      "type": "Ransomware",
+      "severity": "Critical",
+      "sourceIP": "185.220.101.15",
+      "destination": "Finance Server",
+      "status": "Blocked",
+      "timestamp": "2026-06-29T09:45:00Z"
+    },
+    {
+      "id": "ALT-1002",
+      "type": "Phishing",
+      "severity": "High",
+      "sourceIP": "45.67.89.120",
+      "destination": "HR Mailbox",
+      "status": "Investigating",
+      "timestamp": "2026-06-29T08:30:00Z"
+    },
+    {
+      "id": "ALT-1003",
+      "type": "Brute Force",
+      "severity": "Medium",
+      "sourceIP": "91.204.12.67",
+      "destination": "VPN Gateway",
+      "status": "Mitigated",
+      "timestamp": "2026-06-29T07:55:00Z"
+    }
+  ],
+  "topThreatActors": [
+    {
+      "name": "APT29",
+      "country": "Russia",
+      "activity": 87,
+      "target": "Government"
+    },
+    {
+      "name": "Lazarus Group",
+      "country": "North Korea",
+      "activity": 74,
+      "target": "Financial"
+    },
+    {
+      "name": "FIN7",
+      "country": "Unknown",
+      "activity": 58,
+      "target": "Retail"
+    }
+  ],
+  "malwareFamilies": [
+    {
+      "name": "Emotet",
+      "detections": 25
+    },
+    {
+      "name": "LockBit",
+      "detections": 18
+    },
+    {
+      "name": "QakBot",
+      "detections": 13
+    }
+  ],
+  "topCountries": [
+    {
+      "country": "United States",
+      "attacks": 92
+    },
+    {
+      "country": "China",
+      "attacks": 76
+    },
+    {
+      "country": "Russia",
+      "attacks": 68
+    },
+    {
+      "country": "Brazil",
+      "attacks": 41
+    },
+    {
+      "country": "Germany",
+      "attacks": 28
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-10245",
+      "severity": "Critical",
+      "cvss": 9.8,
+      "affected": "Apache Web Server",
+      "status": "Unpatched"
+    },
+    {
+      "cve": "CVE-2026-14562",
+      "severity": "High",
+      "cvss": 8.4,
+      "affected": "Windows Server",
+      "status": "Patch Available"
+    },
+    {
+      "cve": "CVE-2026-17654",
+      "severity": "Medium",
+      "cvss": 6.7,
+      "affected": "OpenSSH",
+      "status": "Mitigated"
+    }
+  ],
+  "attackTimeline": [
+    {
+      "time": "00:00",
+      "attacks": 5
+    },
+    {
+      "time": "04:00",
+      "attacks": 12
+    },
+    {
+      "time": "08:00",
+      "attacks": 34
+    },
+    {
+      "time": "12:00",
+      "attacks": 61
+    },
+    {
+      "time": "16:00",
+      "attacks": 48
+    },
+    {
+      "time": "20:00",
+      "attacks": 29
+    }
+  ]
+}[
+  {
+    "type": "IP",
+    "value": "185.220.101.15",
+    "reputation": "Malicious",
+    "confidence": 98
+  },
+  {
+    "type": "Domain",
+    "value": "secure-login-check.com",
+    "reputation": "Phishing",
+    "confidence": 94
+  },
+  {
+    "type": "Hash",
+    "value": "3f786850e387550fdab836ed7e6dc881de23001b",
+    "reputation": "Malware",
+    "confidence": 99
+  },
+  {
+    "type": "Email",
+    "value": "support@paypa1-security.com",
+    "reputation": "Spoofed",
+    "confidence": 91
+  }
+]
